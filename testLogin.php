@@ -16,10 +16,13 @@
   
       if ($stmt->execute()) {
         $_SESSION['cpf'] = $cpf;
+        $log->info("Usuário cadastrado com sucesso: " . $nome);
         header('Location: sistema.php');
           exit();
       } else {
           // Tratar erro no cadastro, se necessário
+
+          $log->warning("Tentativa de login falhou para o usuário: " . $nome);
         echo "Erro no cadastro: " . $stmt->error;
       }
   }
