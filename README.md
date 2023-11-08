@@ -25,8 +25,6 @@ Além disso, há arquivos de estilo CSS embutidos nas páginas HTML para fornece
 
 ### Estrutura de Diretórios
 
-├── css/              # Arquivos de estilo CSS
-
 ├── vendor/           # Dependências do Composer
 
 ├── index.php         # Página inicial com formulário de cadastro
